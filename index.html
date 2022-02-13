@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./assets/styles/normalize.css">
+    <link rel="stylesheet" href="./assets/styles/style.css">
+    <title>JS_15 week</title>
+</head>
+<body>
+
+    <!-- Calcs start -->    
+    <h1>Простой калькулятор</h1>
+    <div class="points">
+        <label for="number1">Введите первое число</label>
+        <input id="number1" type="number"></div>
+    <div class="points">
+        <label for="number2">Введите второе число</label>
+        <input id="number2" type="number"></div>
+    <div class="points">
+        <label for="answer">Ответ:</label>
+        <div class="result" id="answer"></div>
+    </div>
+    <div class="button1">
+        <button onclick="sum();">Сложить + </button>
+        <button onclick="subtract();">Вычесть - </button>
+        <button onclick="multiply();">Умножить * </button>
+        <button onclick="divide();">Делить / </button>
+    </div>
+    <!-- Calcs end -->
+
+    <!-- Change fons start -->
+    <p class="fons">
+        <label for="changeFon">Выберите тему</label>
+        <select name="" id="changeFon" onchange="changeFon ()">
+            <option value="dark">Темный</option>
+            <option value="white" selected>Светлый</option>
+            <option value="blue" >Синий</option>
+        </select>
+    </p>
+    <!-- Change fons end -->
+
+        <!-- Forms start -->
+    <div class="form-popup" id="form">
+        <div class="form-container"></div>
+        <p>
+            <label for="name"></label>
+            <input type="text" placeholder="Введите Имя" id="name">
+        </p>
+        <p>
+            <label for="tel"></label>
+            <input type="number" placeholder="Телефон" id="mobile">
+        </p>
+        <p>
+            <label for="email"></label>
+            <input type="email" placeholder="Электронная почта" id="email">
+        </p>
+        <p>
+            <label for="mypassword"></label>
+            <input type="mypassword" placeholder="Создайте пароль" id="mypassword">
+        </p>
+        <p>
+            <label for="age"></label>
+            <input type="number" placeholder="Возраст" id="age">
+        </p>
+        <button class="buttonSubmit" onclick="submit()">Продолжить</button>
+    </div>
+    <button class="buttonForm" onclick="openForm()">Регистрация</button>
+    <!-- Forms end -->
+
+    <script src="./assets/js/index.js"></script>
+</body>

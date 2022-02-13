@@ -1,0 +1,62 @@
+        .button1 {
+            display: flex;
+            margin-top: 1vw;
+            margin-left: 10vw;
+            gap: 20px;
+        }
+
+        h1 {
+            margin-top: 5vw;
+            margin-left: 10vw;
+        }
+
+        .points {
+            display: flex;
+            padding: 1vw 10vw;
+            flex-wrap: wrap;
+            justify-content: space-between;
+            width: 25vw;
+        }
+
+        .button2,
+        .fons {
+            margin-top: 1vw;
+            margin-left: 10vw;
+            align-items: start;
+        }
+
+        .buttonForm {
+            margin-top: 1vw;
+            margin-left: 20vw;
+            color: white;
+            border: red;
+            background-color: red;
+            border-radius: 5px;
+            width: 120px;
+            height: 30px;
+        }
+
+        .form-popup {
+            display: none;
+            position: fixed;
+            bottom: 5vw;
+            right: 30vw;
+            border: 2px solid #f1f1f1;
+            z-index: 2;
+        }
+
+        .form-container {
+            background-color: white;
+            width: 200px;
+        }
+
+        #name,
+        #email,
+        #mypassword,
+        #mobile,
+        #age {
+            width: 100%;
+            padding: 15px 0px;
+            border: none;
+            background: #f1f1f1;
+        }
